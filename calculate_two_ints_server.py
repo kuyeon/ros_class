@@ -27,12 +27,12 @@ def handle_calculation(req):
         print("Returning [%s ÷ %s = %s]"%(req.a, req.b, (int(req.a / req.b))))
         return AddTwoIntsResponse(int(req.a / req.b))
 
-def add_two_ints_server():
-    rospy.init_node('add_two_ints_server')
+def int_calculator_server():
+    rospy.init_node('int_calculator_server')
     rospy.set_param('calculation_method', operator)
     s = rospy.Service('add_two_ints', AddTwoInts, handle_calculation)
     print("Ready to calculate ints.")
     rospy.spin()
 
 if __name__ == "__main__":
-    add_two_ints_server()
+    int_calculator_server()
