@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="my_first_package" type="listener.py"   name="listener_1"/>
+  <node pkg="my_first_package" type="talker.py"  name="talker_1"/>
+
+  <node pkg="my_first_package" type="listener.py"  name="listener_2"/>
+  <node pkg="my_first_package" type="talker.py"  name="talker_2"/>
+</launch>
