@@ -47,8 +47,8 @@ void setup()
   
   range_msg.radiation_type = sensor_msgs::Range::ULTRASOUND;
   range_msg.header.frame_id =  frameid;
-  range_msg.field_of_view = 0.1;  // fake
-  range_msg.min_range = 0.0;
+  range_msg.field_of_view = 0.26;  // 
+  range_msg.min_range = 0.02;
   range_msg.max_range = 5.0;
   
   pinMode(trigPin, OUTPUT); 
